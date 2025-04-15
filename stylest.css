@@ -1,0 +1,149 @@
+h1 {
+  /* align-content: center; */
+  /* justify-items: center; */
+  /* text-align: center; */
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+#typenow {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  border: none;
+  color: rgb(176, 187, 187);
+  width: 1020px;
+  height: 50px;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  color: black;
+  height: 1px;
+  width: 750px;
+  border-bottom: none;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.center {
+  height: 70vh;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: bisque;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#bt {
+  background-color: rgb(21, 126, 21);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(183, 191, 180, 0.8);
+  position: absolute;
+  left: 75%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  background-image:url('./images_set/6481665_923.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bt:hover {
+  background-color: #218838; /* darker green */
+  transform: scale(1.05);
+}
+
+span {
+  font-weight: 600;
+  color: red;
+  display: inline-block;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* controls space between timer and mistakes */
+  margin: 10px 0;
+}
+
+.status p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.center p {
+  display: inline-block;
+  margin-right: 20px; /* space between timer and mistakes */
+  font-size: 18px;
+}
+
+/* Styling for correct and wrong letters inside the input field */
+#typenow {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s, color 0.3s;
+}
+#typedText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent; /* Make the input text color transparent */
+  font-size: 2rem;
+  font-family: sans-serif;
+  width: 100%;
+  height: 50px;
+  z-index: 0; /* Put the typed text below the input box */
+}
+
+#typenow.correct {
+  color: #333; /* Correct letters are black */
+}
+
+#typenow.wrong {
+  border-color: red;
+  color: red; /* Wrong letters are red */
+}
+
+.correct-char {
+  color: #333; /* Correct letters are black */
+}
+
+.wrong-char {
+  color: red; /* Wrong letters are red */
+  font-weight: bold; /* Make wrong letters bold to highlight errors */
+  text-decoration: underline; /* Optional: underline wrong letters */
+}

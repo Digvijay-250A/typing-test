@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Typing Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylest.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1>TYPING TEST</h1>
+            <h2>Type the text below as fast as you can!</h2>
+            <hr>
+            <div class="status">
+                <p>Timer:<span id="timer">0s</span></p>
+            <p>Mistakes:<span id="mistakes">0</span></p>
+            </div>
+            
+            <div class="text">
+                <p id="targetText">"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." – Ralph Waldo Emerson</p>
+        </div>
+        <div class="input">
+            <input type="text" id="typenow" placeholder="Start typing...">
+            <div id="typedText"></div>
+            <br/>
+
+            <button id="bt" onclick="fetchRandomSentence()">start</button>
+        </div>
+        <div class="result">
+            <h3>Result</h3>
+            
+                <p>Accuracy: <span id="accuracy">-%</span></p>
+            <p>speed: <span id="wpm">-</span>wpm</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <script src="type.js" >
+
+
+
+        </script>
+    </body>
+</html>
